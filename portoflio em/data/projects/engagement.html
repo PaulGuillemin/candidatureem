@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Éconocourse App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="../photos/logo.png">
+  <link rel="stylesheet" href="../unistyles.css">
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="theme-color" content="#3ddc84">
+  <script type="text/javascript">
+    if (screen.width <= 699) {
+      document.location = "../mobile.html";
+    }
+  </script>
+  <script language=javascript>
+    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+      location.replace("../mobile.html");
+    }
+  </script>
+  <style>
+    [data-scroll-content] {
+      padding-top: 14vw;
+      padding-bottom: 17.5vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nl" class="nav_left">
+    <h5 class="flex">
+      évènements
+      <hr data-emergence="visible" style="width: 4vw;">
+      associations
+    </h5>
+  </div>
+  <div id="mbtn_side">
+    <a href="/candidature.html">HOME</a>
+  </div>
+  <!--MAIN-->
+
+  <!--SCROLL-CTN-->
+  <div data-scroll>
+    <div data-scroll-content>
+      <!--CONTENT-->
+      <div class="sw col-10">
+        <div>
+          <h1 class="jus ali">
+            <span class="row">
+              <span data-emergence="hidden">Engagement &amp; </span>
+            </span>
+            <p class="swdes">
+              <span class="row">
+                <span data-emergence="hidden">
+                  Associations et évènements
+                </span>
+              </span>
+            </p>
+          </h1>
+          <h1 class="jus">
+            <hr style="width: 45%; margin-left: 0;" data-emergence="hidden">
+            <span class="row">
+              <span data-emergence="hidden">Événements</span>
+            </span>
+          </h1>
+          <br>
+        </div>
+        <p style="font-size: x-large;">
+          <span>
+            <span data-emergence="hidden">
+              Mon engagement dans les associations m'a permis d'appliquer les principes du management et de la gestion
+            </span>
+          </span>
+        </p>
+        <p style="font-size: x-large;">
+          <span>
+            <span data-emergence="hidden">
+              Ma participations à divers évènements et salons m'ont permis de me forger un réseau.
+            </span>
+          </span>
+        </p>
+    
+        <div class="flex">
+          <div class="scol col-6">
+            <div class="w w-margin">
+              <div class="imgrev" data-emergence="hidden">
+                <img src="../photos/fetesciences.jpg" alt="Participation associative">
+              </div>
+              <p>
+                <span class="row">
+                  <span data-emergence="hidden" style="font-size: x-large; font-family: pbold;">
+                    <br>
+                    Mon rôle associatif
+                  </span>
+                </span>
+              </p>
+              <hr style="width: 20%; height: 6px; margin-left: 0;" data-emergence="hidden">
+              <br>
+              <p style="font-size: large;">
+                En tant que résponsable communication de l'association Illu-Mines, j'ai pu co-organiser de grands événements tels que la Fête de la Science, des sorties éducatives et plusieurs conférences. J'ai aussi supervisé les partenariats pour le Bureau des Sports, ce qui m'a permis de comprendre l'importance de ces dernier dans le fonctionnement de l'association et comment créer ces opportunités.
+              </p>
+            </div>
+          </div>
+          <!--XXXXXXXXXXXx-->
+          <div class="sbot scol col-6">
+            <div class="w w-margin">
+              <div data-emergence="hidden">
+                <img src="../photos/viva.jpg" style="width: 60vh;">
+              </div>
+              <div>
+                <p>
+                  <span class="row">
+                    <span data-emergence="hidden" style="font-size: x-large; font-family: pbold;">
+                      <br>
+                      Les salons les plus marquants
+                    </span>
+                  </span>
+                </p>
+              </div>
+              <hr style="width: 20%; height: 6px; margin-left: 0;" data-emergence="hidden">
+              <br>
+              <p style="font-size: large;">
+                J'ai pu me rendre au salon VIVA Tech 2024, grand salon de l'innovation et des technologies où j'ai eu l'occasion d'échanger avec de nombreux entrepreuneurs et entreprises. J'ai également participé au Grand Bain – La French Tech, où j'ai pu échangé sur les nouvelles technologies et l'entrepreneuriat notamment de la région sud. Ces expériences m'ont permis de développer un réseau et d'acquérir une meilleure compréhension des tendances actuelles dans de nombreux domaines notamment de l'IA.
+              </p>
+            </div>
+          </div>
+          <!--XXXXXXXXXXXXXX-->
+        </div>
+      </div>
+    </div>
+    
+     
+
+  </div>
+  <!--CONTACT-->
+  </div>
+  <!--scroll-end-->
+  </div>
+  </div>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/imagesloaded.pkgd.min.js"></script>
+  <script src="../js/skew.js"></script>
+  <script src="../js/paroller.js"></script>
+  <script src="../js/emergence.js"></script>
+  <script src="../js/menu.js"></script>
+  <script>
+    emergence.init({
+      container: window,
+      reset: false,
+      handheld: true,
+      throttle: 250,
+      elemCushion: 0.05,
+      offsetTop: 0,
+      offsetRight: 0,
+      offsetBottom: 80,
+      offsetLeft: 0,
+      callback: function (element, state) {
+        if (state === 'visible') {
+          console.log('Element is visible.');
+        } else if (state === 'reset') {
+          console.log('Element is hidden with reset.');
+        } else if (state === 'noreset') {
+          console.log('Element is hidden with NO reset.');
+        }
+      }
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('[data-paroller-factor]').paroller();
+      //TO BOTTOM
+      $(".sbot").paroller({
+        factor: .18,
+        type: 'foreground',
+        direction: 'vertical',
+        transition: 'transform .3s ease-out'
+      });
+    });
+  </script>
+</body>
+
+</html>
