@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Recharge Inductive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="../photos/logo.png">
+  <link rel="stylesheet" href="../unistyles.css">
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="description" content="Présentation d'un projet novateur pour EM Lyon : un système de recharge automatisée de véhicules électriques par induction.">
+  <meta name="theme-color" content="#3ddc84">
+  <script type="text/javascript">
+    if (screen.width <= 699) {
+      document.location = "../mobile.html";
+    }
+  </script>
+  <script language=javascript>
+    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+      location.replace("../mobile.html");
+    }
+  </script>
+  <style>
+    [data-scroll-content] {
+      padding-top: 14vw;
+      padding-bottom: 17.5vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nl" class="nav_left">
+    <h5 class="flex">
+      RECHARGE
+      <hr data-emergence="visible" style="width: 4vw;">
+      INDUCTIVE
+    </h5>
+  </div>
+  <div id="mbtn_side">
+    <a href="../">HOME</a>
+  </div>
+  <!--MAIN-->
+
+  <!--SCROLL-CTN-->
+  <div data-scroll>
+    <div data-scroll-content>
+      <!--CONTENT-->
+      <div class="sw col-10">
+        <div>
+          <h1 class="jus ali">
+            <span class="row">
+              <span data-emergence="hidden">Recharge</span>
+            </span>
+            <p class="swdes">
+              <span class="row">
+                <span data-emergence="hidden">
+                  Une vision pour transformer la mobilité urbaine
+                </span>
+              </span>
+            </p>
+          </h1>
+          <h1 class="jus">
+            <hr style="width: 50%; margin-left: 0;" data-emergence="hidden">
+            <span class="row">
+              <span data-emergence="hidden">Induction</span>
+            </span>
+          </h1>
+          <br>
+        </div>
+        <p>
+          <span>
+            <span data-emergence="hidden">
+              Un projet pour répondre aux défis de la mobilité électrique avec une approche durable.
+            </span>
+          </span>
+        </p>
+        <br>
+
+        <div class="flex">
+          <div class="scol col-6">
+            <div class="w w-margin">
+              <div class="imgrev" data-emergence="hidden">
+                <img src="../photos/charge-induction.png" alt="Présentation du système">
+              </div>
+              <p>
+                <span class="row">
+                  <span data-emergence="hidden" style="font-size: x-large; font-family: pbold;">
+                    <br>
+                    <br>
+                    Pourquoi la recharge inductive ?
+                  </span>
+                </span>
+              </p>
+              <hr data-emergence="hidden">
+              <br>
+              <p>
+                Elle réduit l'encombrement urbain et anticipe les besoins des véhicules autonomes. Une solution propre et sans contrainte mécanique.
+              </p>
+              <br>
+              <p>
+                Une intégration durable et pratique qui allie efficacité technologique et respect des besoins urbains.
+              </p>
+            </div>
+          </div>
+          <!--XXXXXXXXXXXx-->
+          <div class="sbot scol col-6">
+            <div class="w w-margin">
+              <div data-emergence="hidden">
+                <img src="../photos/stellantis.png" style="width: 100%;">
+              </div>
+              <div>                
+                <p>
+                  <span class="row">
+                    <span data-emergence="hidden" style="font-size: x-large; font-family: pbold;">
+                      <br>
+                      Une expérience marquante
+                    </span>
+                  </span>
+                </p>
+              </div>
+              <hr data-emergence="hidden">
+              <br>
+              <p>
+                Durant ma classe prépa, j'ai eu l'occasion de collaborer avec Stellantis pour concevoir ce système. Ainsi j'ai pu me confronter aux besoins réels de l'industrie.
+              </p>
+              <br>
+              <p>
+                Cette expérience a renforcé mon aptitude à transformer des idées en solutions concrètes et surtout à dialoguer avec l'industrie pour connaître les besoins.
+              </p>
+              <br>
+              <p>
+                Mon ambition est alors de développer ces compétences en entrepreneuriat et management à l'EM Lyon, pour concevoir des projets d'impact.
+              </p>
+            </div>
+          </div>
+          <!--XXXXXXXXXXXXXX-->
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--CONTACT-->
+  </div>
+  <!--scroll-end-->
+  </div>
+  </div>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/imagesloaded.pkgd.min.js"></script>
+  <script src="../js/skew.js"></script>
+  <script src="../js/paroller.js"></script>
+  <script src="../js/emergence.js"></script>
+  <script src="../js/menu.js"></script>
+  <script>
+    emergence.init({
+      container: window,
+      reset: false,
+      handheld: true,
+      throttle: 250,
+      elemCushion: 0.05,
+      offsetTop: 0,
+      offsetRight: 0,
+      offsetBottom: 80,
+      offsetLeft: 0,
+      callback: function (element, state) {
+        if (state === 'visible') {
+          console.log('Element is visible.');
+        } else if (state === 'reset') {
+          console.log('Element is hidden with reset.');
+        } else if (state === 'noreset') {
+          console.log('Element is hidden with NO reset.');
+        }
+      }
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('[data-paroller-factor]').paroller();
+      //TO BOTTOM
+      $(".sbot").paroller({
+        factor: .18,
+        type: 'foreground',
+        direction: 'vertical',
+        transition: 'transform .3s ease-out'
+      });
+    });
+  </script>
+</body>
+
+</html>

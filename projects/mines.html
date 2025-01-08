@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mines St Etienne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="../photos/logo.png">
+  <link rel="stylesheet" href="../unistyles.css">
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="description" content="Présentation de mon parcours à l'École des Mines de Saint-Étienne.">
+  <meta name="theme-color" content="#3ddc84">
+  <script type="text/javascript">
+    if (screen.width <= 699) {
+      document.location = "../mobile.html";
+    }
+  </script>
+  <script language=javascript>
+    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+      location.replace("../mobile.html");
+    }
+  </script>
+  <style>
+    [data-scroll-content] {
+      padding-top: 14vw;
+      padding-bottom: 17.5vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nl" class="nav_left">
+    <h5 class="flex">
+      MINES
+      <hr data-emergence="visible" style="width: 4vw;">
+      SAINT-ETIENNE
+    </h5>
+  </div>
+  <div id="mbtn_side">
+    <a href="../">HOME</a>
+  </div>
+  <!--MAIN-->
+
+  <!--SCROLL-CTN-->
+  <div data-scroll>
+    <div data-scroll-content>
+      <!--CONTENT-->
+      <div class="sw col-10">
+        <div>
+          <h1 class="jus ali">
+            <span class="row">
+              <span data-emergence="hidden">MINES</span>
+            </span>
+            <p class="swdes">
+              <span class="row">
+                <span data-emergence="hidden">
+                  École des Mines de Saint-Étienne
+                </span>
+              </span>
+            </p>
+          </h1>
+          <h1 class="jus">
+            <hr style="width: 40%; margin-left: 0;" data-emergence="hidden">
+            <span class="row">
+              <span data-emergence="hidden">SAINT-ÉTIENNE</span>
+            </span>
+          </h1>
+          <br>
+        </div>
+        <p style="font-size: x-large;">
+          <span>
+            <span data-emergence="hidden">
+              Intégrer l’École des Mines de Saint-Étienne représentait une opportunité unique d’accéder à une formation d’ingénieur tournée vers l’avenir. Les enseignements proposés permettent de se spécialiser dans des domaines porteurs et en constante évolution tels que l'informatique, l'électronique ou encore l'IA...
+            </span>
+          </span>
+        </p>
+        <br>
+        <p style="font-size: x-large;">
+          <span>
+            <span data-emergence="hidden">
+              En plus de proposer des partenariats et opportunités enrichissant mon diplôme final, l’école bénéficie du grand réseau de l’Institut Mines-Télécom.
+            </span>
+          </span>
+        </p>
+
+        <div class="flex">
+          <div class="scol col-6">
+            <div class="w w-margin">
+              <div class="imgrev" data-emergence="hidden">
+                <img src="../photos/minesPhoto.jpg" alt="Projet aux Mines">
+              </div>
+              <p>
+                <span class="row">
+                  <span data-emergence="hidden" style="font-size: x-large; font-family: pbold;">
+                    Projets significatifs
+                  </span>
+                </span>
+              </p>
+              <hr style="width: 20%; height: 6px; margin-left: 0;" data-emergence="hidden">
+              <br>
+              <p style="font-size: large;">
+                Parmi les projets marquants, j’ai eu l’occasion de travailler sur des robots, projets électroniques, simulations et des projets managérieux. Ces expériences m’ont appris à collaborer efficacement avec mes camarades et à m'organiser dans mon travail.
+              </p>
+              <br>
+              <p style="font-size: large;">
+                Ces projets m’ont également permis de renforcer ma capacité à analyser des problèmes complexes et à proposer des solutions originales tout en respectant les contraintes techniques et temporelles.
+              </p>
+            </div>
+          </div>
+          <!--XXXXXXXXXXXx-->
+          <div class="sbot scol col-6">
+            <div class="w w-margin">
+              <div data-emergence="hidden">
+                <img src="../photos/minesPhoto2.jpg" alt="Travail d'équipe aux Mines">
+              </div>
+              <div>
+                <p>
+                  <span class="row">
+                    <span data-emergence="hidden" style="font-size: x-large; font-family: pbold;">
+                      Impact sur mon parcours
+                    </span>
+                  </span>
+                </p>
+              </div>
+              <hr style="width: 20%; height: 6px; margin-left: 0;" data-emergence="hidden">
+              <br>
+              <p style="font-size: large;">
+                Cette formation m’a non seulement fourni une solide expertise technique, mais elle a également aiguisé mon esprit critique et ma capacité à m’adapter à des environnements en constante évolution tel que l'électronique et l'informatique.
+              </p>
+              <br>
+              <p style="font-size: large;">
+                Aujourd’hui, les compétences et les enseignements tirés de ma formation aux Mines constituent un atout majeur dans mon parcours. Ils me permettent d’aborder mes projets futurs avec confiance et ambition, en m'inspirant de ce que j'ai pu y apprendre.
+              </p>
+            </div>
+          </div>
+          <!--XXXXXXXXXXXXXX-->
+        </div>
+      </div>
+    </div>
+    <!--OTHERS-->
+
+    <!--scroll-end-->
+  </div>
+  </div>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/imagesloaded.pkgd.min.js"></script>
+  <script src="../js/skew.js"></script>
+  <script src="../js/paroller.js"></script>
+  <script src="../js/emergence.js"></script>
+  <script src="../js/menu.js"></script>
+  <script>
+    emergence.init({
+      container: window,
+      reset: false,
+      handheld: true,
+      throttle: 250,
+      elemCushion: 0.05,
+      offsetTop: 0,
+      offsetRight: 0,
+      offsetBottom: 80,
+      offsetLeft: 0,
+      callback: function (element, state) {
+        if (state === 'visible') {
+          console.log('Element is visible.');
+        } else if (state === 'reset') {
+          console.log('Element is hidden with reset.');
+        } else if (state === 'noreset') {
+          console.log('Element is hidden with NO reset.');
+        }
+      }
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('[data-paroller-factor]').paroller();
+      //TO BOTTOM
+      $(".sbot").paroller({
+        factor: .18,
+        type: 'foreground',
+        direction: 'vertical',
+        transition: 'transform .3s ease-out'
+      });
+    });
+  </script>
+</body>
+
+</html>
